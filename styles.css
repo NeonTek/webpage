@@ -7,15 +7,13 @@
 }
 * { 
   scroll-behavior: smooth;
-  padding:0%;
   margin: 0%;
   text-decoration: none;
+  overflow-x: hidden;
 }
 body{
   position: relative;
   background: var(--background-color1);
-  width: 100vw;
-  height: auto;
   overflow-x: hidden;
   font-family: sans-serif;
   bottom: 10px;
@@ -36,25 +34,25 @@ body{
 .title {
   color: var(--title-color1);
   padding: 2px;
+  text-align: center;
   font-size: 50px;
   margin: 10px 0;
   font-weight: bold;
-  text-align: center;
   letter-spacing: 1px;
+  width: 100%;
   font-family: Helvetica, sans-serif;
   text-shadow: 3px 10px 10px var(--title-color1);
-  width: 100vw
 }
 .subtitle {
   color: var(--title-color1);
   font-style: italic;
   text-align: center;
-  width: 100vw;
+  width: 100%;
 }
 .subtitle1 {
   color: var(--background-color2);
   text-align: center;
-  width: 100vw;
+  width: 100%;
 }
 .navbar .nav-items {
   list-style: none;
