@@ -9,12 +9,11 @@
   scroll-behavior: smooth;
   margin: 0%;
   text-decoration: none;
+  overflow-x: hidden;
 }
 body{
-  position: relative;
   background: var(--background-color1);
   font-family: sans-serif;
-  bottom: 10px;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
@@ -61,7 +60,9 @@ body{
   padding: 1px;
   float: right;
   border-radius: 10px;
-  overflow: hidden;
+}
+.nav-item1, .nav-item2, .nav-item3, .nav-item4 {
+  overflow-y: hidden;
 }
 .nav-item1 a,.nav-item2 a,.nav-item3 a,.nav-item4 a {
   padding: 6px;
@@ -83,6 +84,7 @@ h3 {
   width: 70%;
   text-align: center;
   margin: 0 15%;
+  overflow: hidden;
 }
 #feedback {
   font-size: 1rem;
@@ -214,6 +216,7 @@ img {
 @media (min-width: 1000px) {
   body {
     font-size: 1.25rem;
+    overflow-x: hidden;
   }
   .title {
     font-size: 5rem;
@@ -224,8 +227,14 @@ img {
   .nav-link {
     font-size: 15px;   
   }
+  body {
+    overflow-x: hidden;
+  }
 }
 @media (max-width: 400px){
+  body{
+    overflow-x: hidden;
+  }
   .nav-link {
     font-size: 10px;
   }
