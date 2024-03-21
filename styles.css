@@ -2,14 +2,21 @@
   --background-color1: white;
   --background-color2: #003039;
   --background-color3: grey;
-  --title-color1: #e6eaf0;
-  --title-color2: black;
+  --text-color1: white;
+
 }
 * { 
   scroll-behavior: smooth;
   margin: 0%;
   text-decoration: none;
   overflow-x: hidden;
+}
+.background {
+  position: absolute;
+  top: 29vh;
+  width: 100%;
+  height: 950px;
+  z-index: -1;
 }
 body{
   background: var(--background-color1);
@@ -29,7 +36,7 @@ body{
   text-align: center;
 }
 .title {
-  color: var(--title-color1);
+  color: var(--text-color1);
   padding: 2px;
   text-align: center;
   font-size: 50px;
@@ -37,18 +44,19 @@ body{
   letter-spacing: 1px;
   width: 100vw;
   font-family: Helvetica, sans-serif;
-  text-shadow: 3px 10px 10px var(--title-color1);
+  text-shadow: 3px 10px 10px var(--text-color1);
 }
 .subtitle {
-  color: var(--title-color1);
+  color: var(--text-color1);
   font-style: italic;
   text-align: center;
   width: 100%;
 }
 .subtitle1 {
-  color: var(--background-color2);
+  color: var(--text-color1);
   text-align: center;
   width: 100%;
+  padding: 20px;
 }
 .navbar .nav-items {
   list-style: none;
@@ -67,23 +75,19 @@ body{
 .nav-item1 a,.nav-item2 a,.nav-item3 a,.nav-item4 a {
   padding: 6px;
   margin: 15px;
-  color: var(--title-color1);
+  color: var(--text-color1);
   font-size: 15px;
 }
 p {
   padding: 10px;
-  color: var(--title-color2);
-  font-size: 1.25rem;
-}
-h3 {
-  padding: 20px;
-  color: var(--title-color2);
+  color: var(--text-color1);
   font-size: 1.25rem;
 }
 .body {
+  padding: 30px;
   width: 70%;
-  text-align: center;
-  margin: 0 15%;
+  color: var(--text-color1);
+  margin: 0 12%;
   overflow: hidden;
 }
 #feedback {
@@ -97,19 +101,12 @@ h3 {
   background-color: var(--background-color2);
   width: 25vw;
 }
-.image-caption {
-  text-align: center;
-}
-a {
-  text-decoration: none;
-  color: var(--title-color2);
-  font-size: 1rem;
-}
+
 #nav-bar .nav-link {
   color: var(--title-color1)
 }
 .intro {
-  color: var(--background-color2);
+  color: var(--text-color1);
   position: relative;
   padding: auto;
   margin: auto;
@@ -117,7 +114,7 @@ a {
   font-size: 30px;
   text-align: center;
   font-weight: bold;
-  animation: intro 2s linear 0s 1;
+  animation: intro 4s linear 0s 1;
   text-shadow: 0 -27px 5px black;
 }
 .base {
@@ -126,9 +123,9 @@ a {
   top: -15px;
   padding: auto;
   margin: auto;
-  border:  1px solid var(--background-color2);
+  border:  1px solid var(--text-color1);
   width: 30vw;
-  box-shadow: 0 -2px 10px 2px var(--background-color2);
+  box-shadow: 0 -2px 10px 2px var(--text-color1);
 }
 address {
   text-align: center;
@@ -141,25 +138,16 @@ address {
 p {
   font-family: Arial, sans-Serif;
 }
-img {
-  border-radius: 20px;
-}
+
 .info {
   text-align: center;
 }
-#projects {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+
 .feedback {
   text-align: center;
   font-size: 20px;
 }
-#profile-link {
-  color: green;
-}
+
 @keyframes intro {
   0% {
     position: relative;
@@ -170,31 +158,31 @@ img {
   20% {
     position: relative;
     top: -20vh;
-    color:#414141;
+    color:#080808;
     text-shadow: 0 -5px 27px black;
   }
   40% {
     position: relative;
     top: -15vh;
-    color: rgb(99, 99, 99);
+    color: rgb(52, 45, 45);
     text-shadow: 0 -9px 20px black;
   }
   60% {
     position: relative;
     top: -10vh;
-    color: rgb(109, 106, 106);
+    color: rgb(33, 32, 32);
     text-shadow: 0 -14px 14px black;
   }
   80% {
     position: relative;
     top: -5vh;
-    color: rgb(160, 160, 160);
+    color: rgb(35, 34, 34);
     text-shadow: 0 -20px 9px black;
   }
   100% {
     position: relative;
     top: 0vh;
-    color: var(--background-color2);
+    color: var(--text-color1);
     text-shadow: 0 -27px 5px black;
   }
 }
@@ -232,11 +220,17 @@ img {
   .nav-link {
     font-size: 15px;   
   }
+  .background {
+    height: 1100px;
+  }
   body {
     overflow-x: hidden;
   }
 }
 @media (max-width: 400px){
+  .background {
+    height: 1300px;
+  }
   body{
     overflow-x: hidden;
   }
