@@ -228,6 +228,9 @@ p {
   body {
     overflow-x: hidden;
   }
+  .body {
+    margin: 0% 8%;
+  }
 }
 @media (max-width: 400px){
   .background {
@@ -238,6 +241,9 @@ p {
   }
   .nav-link {
     font-size: 10px;
+  }
+  .body {
+    margin: 0% 5%;
   }
   .navbar {
     align-items: center;
